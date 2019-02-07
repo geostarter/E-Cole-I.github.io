@@ -83,9 +83,9 @@ header .overlay {
   opacity: 0;  -webkit-filter: blur(4px);
 }
 
-img{
+/*img{
   margin-right:20px
-}
+}*/
 
 .site {
   padding: 0;
@@ -152,8 +152,17 @@ img{
 /*  width: 100%;*/
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: #FF684A;
+  background-color: #EC6A49;
   color: #EEEEEE;
+
+}
+
+.img2 {
+/*  width: 100%;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: white;
+  color: #222;
 
 }
 
