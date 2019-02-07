@@ -1,0 +1,277 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font: 1em/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+body {
+  font-size: 1.3em;
+}
+
+header {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url("https://unsplash.com/photos/ReL4fy3Wg1U/download?force=true") center no-repeat;
+  /* Image Credit: Unsplash.me */
+  background-size: cover;
+  opacity: 0.85;
+}
+header .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+header h1, header h2 {
+  margin: 0;
+}
+header h2 {
+  text-transform: uppercase;
+  margin-top: -.5em;
+}
+
+h1 {
+  font-size: 90px;
+}
+
+.menu-color {
+  color: white;
+}
+
+.menu-h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+header hgroup {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background:#333 center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;  -webkit-filter: blur(4px);
+}
+
+img{
+  margin-right:20px
+}
+
+.site {
+  padding: 0;
+  text-align: center;
+  background-color: #efefef;
+  font-size: .8em;
+  color: #444;
+  position:relative
+}
+.site a {
+  color: #666;
+  text-decoration: none;
+}
+.site a:hover {
+  color: #222;
+}
+
+.site nav{
+  position:absolute;
+  top:0;
+  left:0;
+  background:#222;
+  width:100%
+}
+.site nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+.site nav a:hover{
+  background:#333;
+  color:#fff
+}
+
+
+.welcome {
+  color: #222;
+  background-color: white;
+  text-align:center;
+  padding-top: 5%;
+  text-align: justify;
+}
+
+.menu-paragraph {
+  padding-top: 1.5%;
+  padding-right: 32%;
+  padding-left: 32%;
+  padding-bottom: 5%;
+  margin: auto;
+  font-size: 18.5px;
+}
+
+.menu-section {
+  padding-top: 1.5%;
+  padding-right: 32%;
+  padding-left: 32%;
+  padding-bottom: 5%;
+  margin: auto;
+  font-size: 18.5px;
+}
+
+
+.img1 {
+/*  width: 100%;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #FF684A;
+  color: #EEEEEE;
+
+}
+
+.portrait {
+  border-radius: 60%;
+  display: block;
+  width: 18%;
+  height: 18%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+/* ------------------- Grid -------------------*/
+
+.container {
+  max-width: 50em;
+  width:92%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  clear: both;
+  margin-right: -1%;
+  margin-left:  -1%;
+  
+}
+
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ */
+.row {
+  *zoom: 1;
+}
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  float: left;
+  width:100%;
+  padding: 0 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 40em) {
+  .grid-1 { width: 16.6666666%; }
+  .grid-2 { width: 33.3333333%; }
+  .grid-3 { width: 50%; }
+  .grid-4 { width: 61.6666666%; }
+  .grid-5 { width: 83.3333333%; }
+  .grid-6 { width: 100%; }
+
+}
+
+
+/* Experience */
+.experience [class*="row"] {
+  border-bottom: dotted 1px #ccc;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.experience h2 {
+  margin-bottom: 0;
+}
+
+.experience h2, .experience p {
+  text-align: center;
+}
+
+.experience [class*="row"]:last-of-type {
+  border: none;
+}
+
+@media screen and (min-width: 40em) {
+  .experience h2, .experience p {
+    text-align: left;
+  }
+}
+
+
+/* Education Block */
+.education {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 40em) {
+  .education {
+    width: 70%;
+  }
+}
+
+.uni {
+  text-align: center;
+}
