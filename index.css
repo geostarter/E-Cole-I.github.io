@@ -23,7 +23,7 @@ header {
   background: url("https://unsplash.com/photos/VBNb52J8Trk/download?force=true") center no-repeat;
   /* Image Credit: Unsplash.me */
   background-size: cover;
-  opacity: 0.87;
+  opacity: 0.92;
 }
 header .content {
   position: absolute;
@@ -42,7 +42,7 @@ header h2 {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 75px;
 }
 
 .menu-color {
@@ -185,7 +185,7 @@ header .overlay {
 }
 
 .portrait {
-  border-radius: 60%;
+  border-radius: 10%;
   display: block;
   width: 20%;
   height: 20%;
