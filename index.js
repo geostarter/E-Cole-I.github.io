@@ -96,5 +96,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 $.getJSON("data/visit.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(mymap2);
+    L.geoJson(data).bindPopup(function (layer) {
+      return layer.features.properties.ADMIN;
+}).addTo(mymap2);
   });
