@@ -338,7 +338,7 @@ hr {
 }
 
 #mapid {
-  height: 425px;
+  height: 300px;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -346,9 +346,23 @@ hr {
 }
 
 #mapid2 {
-  height: 1000px;
+  height: 750px;
   width: 100%;
   position: absolute;
   z-index: 1;
   margin-bottom: 20px;
+/*  margin-top: 5%;*/
+}
+
+.project {
+  padding-bottom: 3%;
+}
+
+.menu-travel {
+  padding-top: 0%;
+  padding-right: 25%;
+  padding-left: 25%;
+  padding-bottom: 5%;
+  margin: auto;
+  font-size: 18.5px;
 }

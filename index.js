@@ -94,7 +94,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoiY29sZWZ1c2lvbiIsImEiOiJjamc1aGNmMW0xYzkxMnJsamY0djQ2cmJzIn0.aenDPrx_dyONEil9ploDoQ'
 }).addTo(mymap2);
 
-$.getJSON("data/countries.geojson",function(data){
+$.getJSON("data/visit.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(mymap2);
   });
