@@ -74,15 +74,15 @@ Scroller.prototype = {
 var scroller = new Scroller();  
 scroller.init();
 
-var mymap = L.map('mapid').setView([44.9754, -93.2531], 14);
+// var mymap = L.map('mapid').setView([44.9754, -93.2531], 14);
 
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoiY29sZWZ1c2lvbiIsImEiOiJjamc1aGNmMW0xYzkxMnJsamY0djQ2cmJzIn0.aenDPrx_dyONEil9ploDoQ'
-}).addTo(mymap);
+// L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+//     maxZoom: 18,
+//     id: 'mapbox.streets',
+//     accessToken: 'pk.eyJ1IjoiY29sZWZ1c2lvbiIsImEiOiJjamc1aGNmMW0xYzkxMnJsamY0djQ2cmJzIn0.aenDPrx_dyONEil9ploDoQ'
+// }).addTo(mymap);
 
 
 var mymap2 = L.map('mapid2').setView([15,-45], 3);
