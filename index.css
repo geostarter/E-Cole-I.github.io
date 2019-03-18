@@ -23,8 +23,36 @@ header {
   background: url("https://unsplash.com/photos/WKT3TE5AQu0/download?force=true") center no-repeat;
   /* Image Credit: Unsplash.me */
   background-size: cover;
-  opacity: 0.92;
+  opacity: 0.85;
 }
+
+
+/* TRY TEST*/
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://unsplash.com/photos/WKT3TE5AQu0/download?force=true");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("https://unsplash.com/photos/WKT3TE5AQu0/download?force=true");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("https://unsplash.com/photos/WKT3TE5AQu0/download?force=true");
+  min-height: 400px;
+}
+
+/*END TEST*/
 
 header .content {
   position: absolute;
