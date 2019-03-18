@@ -6,7 +6,7 @@ html, body {
 }
 
 html {
-  font: 1em/1.5 "Lato", sans-serif;
+  font: 400 15px/1.8 "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
@@ -182,7 +182,7 @@ header .overlay {
 /*  width: 100%;*/
   padding-top: 5%;
   padding-bottom: 2%;
-  background-color: #118995;
+  background-color: #222;
   color: #EEEEEE;
   position: relative;
 
