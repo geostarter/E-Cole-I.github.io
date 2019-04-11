@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.box-align {
+	margin: 0 auto;
+    width: 1200px; 
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.4;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.paragraph-card {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 350px;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+	background-color: #32aaf5;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+/*#hourofci-flip {
+	background-color: #32aaf5;
+}
+
+#workforce-flip {
+	background-color: #a53229;
+}
+
+#kilauea-flip {
+	background-color: #a53229;
+}*/
+
+</style>
+</head>
+<body>
+
+<div class='box-align'>
+	<a href='https://sites.google.com/umn.edu/hourofci/home' target='_blank'>
+	<div class='gallery'>
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+		      <img src="./images/hippo.png" alt="Avatar" style="width:300px;height:300px;">
+		    </div>
+		    <div class="flip-card-back">
+		      <h1>Hour of CI</h1>  
+		      <p></p>
+		      <p class = 'paragraph-card'>I'm part of an NSF funded project breaking down the learning barrier of complex geospatial and computational skill sets aimed at social sciences. With this project, I help to lead the integration team that is responsible for the platform, design, and interactive components.</p>
+		    </div>
+		  </div>
+		</div>
+	</a>
+	</div>
+
+
+	<div class='gallery'>
+		<a href='https://github.com/E-Cole-I/Workforce-Automation' target='_blank'>
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+		      <img src="./images/esri.jpg" alt="Avatar" style="width:300px;height:300px;">
+		    </div>
+		    <div class="flip-card-back" id="workforce-flip">
+		      <h1>Workforce</h1> 
+		      <p></p> 
+		      <p class = 'paragraph-card'>During my internship at Esri, I worked on a project automating the allocation of personnel in the Esri Workforce App using Python and the ArcGIS API for Python.</p>
+		    </div>
+		  </div>
+		</div>
+	</a>
+	</div>
+
+	<div class='gallery'>
+		<a href='https://www.youtube.com/watch?v=Emj6n28BwL0&feature=youtu.be&t=159' target='_blank'>
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+		      <img src="./images/lava2.jpg" alt="Avatar" style="width:300px;height:300px;">
+		    </div>
+		    <div class="flip-card-back">
+		      <h1>Kilauea</h1> 
+		      <p></p> 
+		      <p class = 'paragraph-card'>During my time at Esri, I had the opportunity to represent the University of Minnesota and Esri on the main stage of the 2018 Esri User Conference. Representing the future GIS workforce, I presented on a project I carried out detailing the land shift and lava from the Volcano of Kilauea </p>
+		    </div>
+		  </div>
+		</div>
+	</a>
+	</div>
+
+	<div class='gallery'>
+		<a href='https://github.com/E-Cole-I/Principles-of-Geocomputing' target='_blank'>
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+		      <img src="./images/jupyter.png" alt="Avatar" style="width:300px;height:300px;">
+		    </div>
+		    <div class="flip-card-back">
+		      <h1>Principles of Geocomputing</h1> 
+		      <p></p> 
+		      <p class = 'paragraph-card'>During my time at the University of Minnesota, I developed curriculum to teach a course creating foundational knowledge of spatial computing with Python.</p>
+		    </div>
+		  </div>
+		</div>
+	</a>
+	</div>
+
+
+	<div class='gallery'>
+		<a href='' target='_blank'>
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+		      <img src="./images/node.png" alt="Avatar" style="width:300px;height:300px;">
+		    </div>
+		    <div class="flip-card-back">
+		      <h1>NodeJS</h1> 
+		      <p></p> 
+		      <p class = 'paragraph-card'>As I learn more about development, I like playing around with different technologies to learn as well as challenge myself. In a recent project, I created a NodeJS web server to serve web pages, log in, and write & access data from a MySQL Database. </p>
+		    </div>
+		  </div>
+		</div>
+	</a>
+	</div>
+
+	<div class='gallery'>
+		<a href='https://github.com/E-Cole-I/socialNetworkAnalysis' target='_blank'>
+		<div class="flip-card">
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+		      <img src="./images/socialMedia.png" alt="Avatar" style="width:300px;height:300px;">
+		    </div>
+		    <div class="flip-card-back">
+		      <h1>Eritrea & Twitter</h1> 
+		      <p></p> 
+		      <p class = 'paragraph-card'>Paired up with Josef Woldense, an Assistant Professor in the African American & African Studies Dept., we are using Twitter data and Python to analyze the geopolitical situation in Eritrea and Ethiopia.This project is ongoing. </p>
+		    </div>
+		  </div>
+		</div>
+	</a>
+	</div>
+
+</div>
+
+</body>
+</html>

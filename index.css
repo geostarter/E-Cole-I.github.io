@@ -20,17 +20,17 @@ header {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background: url("https://unsplash.com/photos/WKT3TE5AQu0/download?force=true") center no-repeat;
+  background: url("./images/coffee2.jpg") center no-repeat;
   /* Image Credit: Unsplash.me */
   background-size: cover;
-  opacity: 0.85;
+  opacity: 1;
 }
 
 
 /* TRY TEST*/
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: relative;
-  opacity: 0.85;
+  opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,18 +38,28 @@ header {
 
 }
 .bgimg-1 {
-  background-image: url("https://unsplash.com/photos/WKT3TE5AQu0/download?force=true");
-  min-height: 100%;
+  background-image: url("./images/minneapolis.jpg");
+  min-height: 450px;
 }
 
 .bgimg-2 {
-  background-image: url("https://unsplash.com/photos/WKT3TE5AQu0/download?force=true");
-  min-height: 400px;
+  background-image: url("./images/dc.jpg");
+  min-height: 450px;
 }
 
 .bgimg-3 {
-  background-image: url("https://unsplash.com/photos/WKT3TE5AQu0/download?force=true");
-  min-height: 400px;
+  background-image: url("./images/uc.jpg");
+  min-height: 450px;
+}
+
+.bgimg-4 {
+  background-image: url("./images/me.jpg");
+  min-height: 450px;
+}
+
+.bgimg-5 {
+  background-image: url("./images/uc.jpg");
+  min-height: 450px;
 }
 
 /*END TEST*/
@@ -86,8 +96,8 @@ h1 {
   margin: auto;
   width: 350px;
   border-bottom: 7px solid;
-  border-color: #34a5b0;
-  margin-bottom: 3.5%;
+  /*border-color: #2e2e2e;*/
+  margin-bottom: 5.5%;
   padding-bottom: 0.75%;
 }
 
@@ -120,7 +130,7 @@ header hgroup {
   display: inline-block;
   text-align: center;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   color: #fff;
   /*border: 5px solid #fff;*/
@@ -209,7 +219,7 @@ header .overlay {
 .img1 {
 /*  width: 100%;*/
   padding-top: 5%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
   background-color: #222;
   color: #EEEEEE;
   position: relative;
@@ -353,7 +363,7 @@ hr {
 .project {
   margin: auto;
   width: 85%;
-  padding-top: 2.5%;
+  padding-top: 5%;
 }
 
 .projectimage {
@@ -438,4 +448,67 @@ hr {
   #earth:hover {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
+  
+}
+
+
+.box-align {
+  margin: 0 auto;
+  padding-left: 10%;
+    width: 79%; 
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.4;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.paragraph-card {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 350px;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #2e2e2e;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
