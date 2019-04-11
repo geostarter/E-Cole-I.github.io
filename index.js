@@ -87,15 +87,15 @@ const onEachFeature = (feature, layer) => {
   <table>
   <tr>
     <th>id:</th>
-    <td>${feature.properties.id}</td>
+    <td>${feature.properties.ADMIN}</td>
   </tr>
   <tr>
     <th>shid:</th>
-    <td>${feature.properties.shid}</td>
+    <td>${features.properties}</td>
   </tr>
   <tr>
     <th>area:</th>
-    <td>${feature.properties.area}</td>
+    <td>${feature.properties}</td>
   </tr>
   <tr>
     <th>pop-commute-drive_alone:</th>
