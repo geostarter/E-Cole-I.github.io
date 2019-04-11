@@ -91,7 +91,7 @@ const onEachFeature = (feature, layer) => {
   </tr>
   <tr>
     <th>shid:</th>
-    <td>${features.properties}</td>
+    <td>${feature.properties}</td>
   </tr>
   <tr>
     <th>area:</th>
