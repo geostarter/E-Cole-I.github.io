@@ -90,29 +90,10 @@ const onEachFeature = (feature, layer) => {
     <td>${feature.properties.ADMIN}</td>
   </tr>
   <tr>
-    <th>shid:</th>
-    <td>${feature.properties}</td>
+    <th></th>
+    <td> vacation </td>
   </tr>
-  <tr>
-    <th>area:</th>
-    <td>${feature.properties}</td>
-  </tr>
-  <tr>
-    <th>pop-commute-drive_alone:</th>
-    <td>${feature.properties["pop-commute-drive_alone"]}</td>
-  </tr>
-  <tr>
-    <th>pop-commute-drive_carpool:</th>
-    <td>${feature.properties["pop-commute-drive_carpool"]}</td>
-  </tr>
-  <tr>
-    <th>pop-commute-public_transit:</th>
-    <td>${feature.properties["pop-commute-public_transit"]}</td>
-  </tr>
-  <tr>
-    <th>pop-commute-drive_alone:</th>
-    <td>${feature.properties["pop-commute-walk"]}</td>
-  </tr>
+  
 </table>`;
 
   if (feature.properties && feature.properties.popupContent) {

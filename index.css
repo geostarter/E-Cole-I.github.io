@@ -6,7 +6,7 @@ html, body {
 }
 
 html {
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 15px/1.8 "Archivo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
@@ -39,7 +39,7 @@ header {
 }
 .bgimg-1 {
   background-image: url("./images/minneapolis.jpg");
-  min-height: 500px;
+  min-height: 550px;
 }
 
 .bgimg-2 {
@@ -197,11 +197,12 @@ header .overlay {
   text-align: justify;
 }
 
+
 .menu-paragraph {
   padding-top: 1.5%;
   padding-right: 32%;
   padding-left: 32%;
-  padding-bottom: 5%;
+  padding-bottom: 2%;
   margin: auto;
   font-size: 18.5px;
 }
@@ -362,7 +363,7 @@ hr {
 
 .project {
   margin: auto;
-  width: 85%;
+  width: 76%;
   padding-top: 5%;
 }
 
@@ -403,7 +404,6 @@ hr {
   margin-bottom: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-/*  margin-top: 5%;*/
 }
 
 .project {
@@ -421,10 +421,10 @@ hr {
 
 #solar{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 1%;
   }
   #earth{
       width: 100%;
@@ -520,6 +520,5 @@ div.gallery {
 
 #personal-image {
   margin-left: 25%;
-  padding-top: 7%;
-  padding-bottom: 7%;
+  padding-bottom: 13%;
 }
