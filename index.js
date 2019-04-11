@@ -80,6 +80,48 @@ var myStyle = {
     "opacity": 0.65
 };
 
+
+const onEachFeature = (feature, layer) => {
+  // eslint-disable-line no-use-before-define
+  const popupContent = `
+  <table>
+  <tr>
+    <th>id:</th>
+    <td>${feature.properties.id}</td>
+  </tr>
+  <tr>
+    <th>shid:</th>
+    <td>${feature.properties.shid}</td>
+  </tr>
+  <tr>
+    <th>area:</th>
+    <td>${feature.properties.area}</td>
+  </tr>
+  <tr>
+    <th>pop-commute-drive_alone:</th>
+    <td>${feature.properties["pop-commute-drive_alone"]}</td>
+  </tr>
+  <tr>
+    <th>pop-commute-drive_carpool:</th>
+    <td>${feature.properties["pop-commute-drive_carpool"]}</td>
+  </tr>
+  <tr>
+    <th>pop-commute-public_transit:</th>
+    <td>${feature.properties["pop-commute-public_transit"]}</td>
+  </tr>
+  <tr>
+    <th>pop-commute-drive_alone:</th>
+    <td>${feature.properties["pop-commute-walk"]}</td>
+  </tr>
+</table>`;
+
+  if (feature.properties && feature.properties.popupContent) {
+    popupContent += feature.properties.popupContent;
+  }
+
+  layer.bindPopup(popupContent);
+}
+
 var mymap2 = L.map('mapid2').setView([15,-45], 3);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -91,5 +133,5 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 $.getJSON("data/visit.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data,{style: myStyle}).addTo(mymap2);
+    L.geoJson(data,{style: myStyle, onEachFeature: onEachFeature}).addTo(mymap2);
   });
