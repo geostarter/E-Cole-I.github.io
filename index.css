@@ -39,27 +39,27 @@ header {
 }
 .bgimg-1 {
   background-image: url("./images/minneapolis.jpg");
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .bgimg-2 {
   background-image: url("./images/dc.jpg");
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .bgimg-3 {
   background-image: url("./images/uc.jpg");
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .bgimg-4 {
   background-image: url("./images/me.jpg");
-  min-height: 450px;
+  min-height: 500px;
 }
 
 .bgimg-5 {
   background-image: url("./images/uc.jpg");
-  min-height: 450px;
+  min-height: 500px;
 }
 
 /*END TEST*/
@@ -516,4 +516,10 @@ div.gallery {
   color: white;
   transform: rotateY(180deg);
   z-index: 1;
+}
+
+#personal-image {
+  margin-left: 25%;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }

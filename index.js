@@ -76,7 +76,7 @@ scroller.init();
 
 var myStyle = {
     "color": "#FF8819",
-    "weight": 2,
+    "weight": 3,
     "opacity": 0.65
 };
 
@@ -86,7 +86,7 @@ const onEachFeature = (feature, layer) => {
   const popupContent = `
   <table>
   <tr>
-    <th>id:</th>
+    <th>Country</th>
     <td>${feature.properties.ADMIN}</td>
   </tr>
   <tr>
