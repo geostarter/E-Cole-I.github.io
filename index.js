@@ -76,7 +76,7 @@ scroller.init();
 
 var myStyle = {
     "color": "#FF8819",
-    "weight": 5,
+    "weight": 2,
     "opacity": 0.65
 };
 
