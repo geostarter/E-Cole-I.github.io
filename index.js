@@ -91,7 +91,7 @@ const onEachFeature = (feature, layer) => {
   </tr>
   <tr>
     <th></th>
-    <td> vacation </td>
+    <td></td>
   </tr>
   
 </table>`;
